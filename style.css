@@ -45,6 +45,7 @@ body{
     position:fixed;
     left: 0;
     top: 0;
+    border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +99,48 @@ body{
     top: 0;
     right: 0;
 }
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background:var(--bg-black-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.aside .nav-toggler span::after{
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.aside .nav-toggler span::before{
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.aside .nav{
+    margin-top: 50px;
+}
 
 .aside .nav li{
     margin-bottom: 20px;
@@ -115,7 +158,7 @@ body{
 }
 
 .nav li a.active{
-    color: #e8dfec;
+    color: var(--skin-color);
 }
 
 .nav li a i{
