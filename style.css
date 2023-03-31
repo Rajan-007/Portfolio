@@ -59,6 +59,7 @@ body{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 60px;
 }
 .section-title h2{
     font-size: 40px;
@@ -285,14 +286,7 @@ h3.my-profession{
     top: -40px;
 } 
 .home-img::after{
-    /* content: ' ';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-top: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px; */
+
     content: "";
     position: absolute;
     width: 80px;
@@ -307,4 +301,32 @@ h3.my-profession{
     width: 300px;
     margin: auto;
     border-radius: 5px;
+}
+
+/* About  */
+
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .about-text h3 span{
+    color: var(--skin-color);
+    
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
 }
